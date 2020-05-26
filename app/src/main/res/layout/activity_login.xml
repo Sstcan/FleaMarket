@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".me_Activity.LoginActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrows_left"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="用户登录"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    //用户名
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/image_login"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/me_my"
+            />
+
+        <EditText
+            android:id="@+id/ETlogin_uername"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="75dp"
+            android:cursorVisible="true"
+            android:hint="请输入用户名"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/me_login_cursor_color"
+
+            />
+    </RelativeLayout>
+
+    //密码
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="190dp"
+        android:background="@color/white"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/me_login_password" />
+
+        <EditText
+            android:id="@+id/ETlogin_password"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="75dp"
+            android:cursorVisible="true"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/me_login_cursor_color"
+
+
+            />
+
+    </RelativeLayout>
+
+    //登录按钮
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/me_login_backgr"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp">
+        //注册按钮
+        <TextView
+            android:id="@+id/Texview_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:text="注册"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/Texview_forgetPsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+
+</RelativeLayout>

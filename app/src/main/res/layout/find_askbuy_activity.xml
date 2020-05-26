@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindActivity.AskBuyActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/ASKB_sale_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_left"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出售商品"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:typeface="serif"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ASKB_sale_back"
+            android:layout_marginLeft="8dp"/>
+        <Button
+            android:id="@+id/ASKB_askbuy_submit"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="提交"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        >
+
+
+        //相机
+
+        <ImageView
+            android:id="@+id/ASKB_img_askbuy"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/find_askbuyimg" />
+        //商品名称
+
+        <RelativeLayout
+            android:id="@+id/ASKB_fin_Rname"
+            android:layout_marginTop="110dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/ASKB_TV_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称"
+                android:layout_centerVertical="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ASKB_goods_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ASKB_TV_name" />
+        </RelativeLayout>
+        //价格
+
+        <RelativeLayout
+            android:layout_below="@id/ASKB_fin_Rname"
+            android:id="@+id/ASKB_find_Rprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/ASKB_TV_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期待价格"
+                android:textSize="15sp"
+                android:layout_centerVertical="true" />
+
+            <EditText
+
+                android:id="@+id/ASKB_goods_price"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ASKB_TV_price" />
+        </RelativeLayout>
+        //分类
+
+        <RelativeLayout
+            android:id="@+id/ASKB_find_Rsort"
+            android:layout_below="@id/ASKB_find_Rscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/ASKB_TV_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品分类"
+                android:textSize="15sp"
+                android:layout_centerVertical="true" />
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/ASKB_nice_spinner"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/ASKB_TV_sort"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ASKB_find_Rquantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ASKB_find_Rprice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/ASKB_TV_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="求购数量"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"/>
+            <EditText
+                android:id="@+id/ASKB_goods_quantity"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ASKB_TV_quantity" />
+
+
+
+        </RelativeLayout>
+
+        //联系方式
+
+        <RelativeLayout
+            android:id="@+id/ASKB_find_Rtell"
+            android:layout_below="@id/ASKB_find_Rquantity"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ASKB_TV_tell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式"
+                android:textSize="15sp"
+                android:layout_centerVertical="true" />
+
+            <EditText
+
+                android:id="@+id/ASKB_tell"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ASKB_TV_tell" />
+
+        </RelativeLayout>
+
+        //商品描述
+
+        <RelativeLayout
+            android:id="@+id/ASKB_find_Rscribe"
+            android:layout_below="@id/ASKB_find_Rtell"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ASKB_TV_scribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="求购描述"
+                android:textSize="15sp"
+                android:layout_centerVertical="true" />
+
+            <EditText
+
+                android:id="@+id/ASKB_good_describe"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ASKB_TV_scribe" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/sell_back"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/back_left"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="求购商品"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="25sp"-->
+            <!--android:typeface="serif"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@id/sell_back"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/askbuy_submit"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:text="提交"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginTop="10dp"/>-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:layout_width="368dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout_editor_absoluteY="8dp"-->
+        <!--tools:layout_editor_absoluteX="8dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/find_Rname"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/TV_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="商品名称"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:textSize="15sp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/name_askbuy"-->
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@id/TV_name"-->
+                <!--android:text="相机"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--//分类-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/find_Rsort"-->
+            <!--android:layout_below="@id/find_Rname"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/TV_sort"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="商品分类"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_centerVertical="true" />-->
+            <!--<org.angmarch.views.NiceSpinner-->
+                <!--android:id="@+id/askBuy_nice_spinner"-->
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_toRightOf="@id/TV_sort"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--//联系方式-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/find_Rtell"-->
+            <!--android:layout_below="@id/find_Rsort"-->
+
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/TV_tell"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="联系方式"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_centerVertical="true" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/tell_askbuy"-->
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@id/TV_tell"-->
+                <!--android:text="123452234"-->
+                <!--/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--//描述-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/find_Rscribe"-->
+            <!--android:layout_below="@id/find_Rtell"-->
+
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/TV_scribe"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="描述"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_centerVertical="true" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/describe_askbuy"-->
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@id/TV_scribe"-->
+                <!--android:text="值得一读"/>-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

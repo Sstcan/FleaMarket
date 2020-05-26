@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".me_Activity.UpdatePswdActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/uppswd_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_left"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:typeface="serif"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ASKB_sale_back"
+            android:layout_marginLeft="8dp"/>
+        <Button
+            android:id="@+id/uppswd_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="确认修改"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ASKB_fin_Rname"
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/ASKB_TV_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入新密码"
+            android:layout_centerVertical="true"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/uppswd_new"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ASKB_TV_name" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/ASKB_fin_Rname"
+        android:id="@+id/ASKB_find_Rprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/ASKB_TV_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码"
+            android:textSize="15sp"
+            android:layout_centerVertical="true" />
+
+        <EditText
+
+            android:id="@+id/uppswd_sure"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ASKB_TV_price" />
+    </RelativeLayout>
+
+</RelativeLayout>

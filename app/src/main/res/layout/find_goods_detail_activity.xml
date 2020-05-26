@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindActivity.GoodsDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/detail_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_left"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品详情"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:typeface="serif"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/detail_back"
+            android:layout_marginLeft="8dp"/>
+
+        <ImageView
+            android:id="@+id/detail_colloct"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/detail_uncollect"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp">
+
+
+        //相机
+
+        <ImageView
+            android:id="@+id/detail_goodsimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/aimage" />
+
+        //商品编号
+
+        <RelativeLayout
+            android:id="@+id/detail_fin_Rid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp">
+
+            <TextView
+                android:id="@+id/detail_TV_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="商品编号:     "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/detail_goods_id"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/detail_TV_id" />
+        </RelativeLayout>
+        //商品名称
+
+        <RelativeLayout
+            android:id="@+id/detail_fin_Rname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_fin_Rid"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/detail_TV_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="商品名称:     "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/detail_goods_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/detail_TV_name" />
+        </RelativeLayout>
+
+        //价格
+
+        <RelativeLayout
+            android:id="@+id/detail_find_Rprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_fin_Rname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/detail_TV_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="商品单价:     "
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/detail_goods_price"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/detail_TV_price" />
+        </RelativeLayout>
+
+        //数量
+
+        <RelativeLayout
+            android:id="@+id/detail_find_Rquantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_find_Rprice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/detail_TV_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="商品数量:     "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/detail_goods_quantity"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/detail_TV_quantity" />
+
+
+        </RelativeLayout>
+
+        //联系方式
+
+        <RelativeLayout
+            android:id="@+id/detail_find_Rtell"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_find_Rquantity"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/detail_TV_tell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="联系方式:     "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/detail_tell"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/detail_TV_tell" />
+
+        </RelativeLayout>
+
+        //商品描述
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/detail_find_Rscribe"-->
+        <!--android:layout_below="@id/detail_find_Rtell"-->
+
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/detail_TV_scribe"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="商品描述"-->
+        <!--android:textSize="15sp"-->
+        <!--android:layout_centerVertical="true" />-->
+
+        <!--<EditText-->
+
+        <!--android:id="@+id/detail_good_describe"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@id/detail_TV_scribe" />-->
+
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

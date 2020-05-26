@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FindFragment">
+
+    <RelativeLayout
+        android:id="@+id/find_R1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:id="@+id/btn_qiugou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="求购"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:background="@drawable/find_button_background"
+                android:checked="true"
+
+                />
+
+            <Button
+                android:id="@+id/btn_tanwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="摊位"
+                android:textColor="@color/Black"
+                android:background="@drawable/find_button_background"
+                />
+
+            //android:background="@drawable/find_btnbackg"
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/find_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/me_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/springView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </com.liaoinstan.springview.widget.SpringView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <!--<ListView-->
+        <!--android:id="@+id/lv_showGoods"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="50dp"></ListView>-->
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+</FrameLayout>
